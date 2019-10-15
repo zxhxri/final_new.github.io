@@ -1,0 +1,237 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>final_new</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <meta name="theme-color" content="#fafafa">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9" type="text/javascript"></script>
+
+
+    <script src="https://player.vimeo.com/api/player.js"></script>
+    <link href="dist/lity.css" rel="stylesheet">
+    <script src="vendor/jquery.js"></script>
+    <script src="dist/lity.js"></script>
+    <link rel="stylesheet" href="https://use.typekit.net/eyf7fsm.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+
+</head>
+
+<body>
+
+    <img id="logo" src="img/logo.png" />
+    <!--
+    <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">+</button>
+        <div id="myDropdown" class="dropdown-content">
+            <ul>
+                <li>WORK&nbsp;&nbsp;</li>
+                <a href="directors.html">
+                    <li>DIRECTORS&nbsp;&nbsp;</li>
+                </a>
+                <li>ABOUT&nbsp;&nbsp;</li>
+                <li>CONTACT&nbsp;&nbsp;</li>
+            </ul>
+        </div>
+    </div>
+-->
+
+
+
+    <div class="table">
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th align="left">Title</th>
+                    <th>Preview</th>
+                    <th>Year</th>
+                    <th>Location</th>
+                    <th>Type</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr onclick="toggle1()" class="couponcode">
+                    <th>1</th>
+                    <td>vereia: "dots"</td>
+                    <td onclick="javascript:showDiv();"><a href="https://vimeo.com/346155812" data-lity><img src="gif/vereia.gif" width="100%" /></a></td>
+                    <td>2019</td>
+                    <td>BG</td>
+                    <td>Advertisement</td>
+                </tr>
+                <tr class="info" id="hidethis_dots" style="display:none;">
+                    <td colspan="6">
+                        <p>We spent a few weeks thinking about dots; redesigning and resizing dots; printing and gluing dots. Shooting and editing dots. Dots everywhere. This is VEREIA "DOTS" — for the United Milk Company. <br><br>
+                        Client: UMC (ОМК)<br>
+                        Agency: guts &amp; brains DDB<br>
+                        Produced by final_new<br>
+                        Director: Vasil Petrakov<br>
+                        Director of Photography: Nenad Boroevich<br>
+                        Art Director: Eva Ventova<br>
+                        Stylist: Jina Sheovska, assisted by Elena Kostadinova<br>
+                        Food Stylist: Rumen Stoychev (Jumbo)<br>
+                        1st AD: Goran Popovich<br>
+                        1st AC: Genadi Nikolaev Ivanov<br>
+                        2nd AC: Hristo Uzunov<br>
+                        MUA: Gergana Ivanova<br>
+                        Hair: Stela Ganeva<br>
+                        Post-production: ROBO | robo.bg/<br>
+                        Colour Grading: Demetry @ nulla.tv<br>
+                        Gaffer: Kiril Yonchev, Nikola Lilovski<br>
+                        Grip: Alexander Petrov<br>
+                        Set Manager: Feodor Tsenovski<br>
+                        Location Manager: Anita @ onthespot.bg<br>
+                        Casting: Mila Parusheva @ coolworks.bg</p>
+                    </td>
+                </tr>
+                <tr onclick="toggle2()" class="couponcode">
+                    <th>2</th>
+                    <td>olx: “olx &amp; chill” | 1/3</td>
+                    <td onclick="javascript:showDiv();"><a href="https://vimeo.com/359241446" data-lity><img src="gif/olx.gif" width="100%" /></a></td>
+                    <td>2019</td>
+                    <td>BG</td>
+                    <td>Short</td>
+                </tr>
+                <tr class="info" id="hidethis_olx" style="display:none;">
+                    <td colspan="6">
+                        <p>Client: OLX <br>
+                            Agency: guts &amp; brains DDB<br>
+                            Produced by final_new<br><br>
+
+                            Director: Vasil Petrakov<br>
+                            Director of Photography: Alexander Stanishev<br>
+                            Art Director: Evelina Velichkova<br>
+                            Stylist: Jina Sheovska<br>
+                            1st AC: Teodor Fichev<br>
+                            2nd AC: Moni Kirov<br>
+                            MUA: Iva Dencheva<br>
+                            Hair: Yana Platnarova<br>
+                            Post-production: Bunch @ AUDIO/genetik<br>
+                            Audio post-production: Rossen Pavlov<br>
+                            Colour Grading: Stanimir Bikovski<br>
+                            Gaffer: Nikola Lilovski<br>
+                            Set Manager: Alexander Skerlev<br>
+                            Location Manager: Iva Petkova<br>
+                            Casting: Nina Orlinova Boyanova</p>
+                    </td>
+                </tr>
+
+                <tr class="couponcode">
+                    <th>3</th>
+                    <td onclick="javascript:showDiv();"><a href="https://vimeo.com/364803456" data-lity>metro: “tesla”</a></td>
+                    <td onclick="javascript:showDiv();"><a href="https://vimeo.com/364803456" data-lity><img src="gif/metro.gif" width="100%" /></a></td>
+                    <td>2019</td>
+                    <td>BG</td>
+                    <td>Something</td>
+                </tr>
+                <tr class="couponcode">
+                    <th>4</th>
+                    <td onclick="javascript:showDiv();"><a href="https://vimeo.com/359241446" data-lity>TBA</a></td>
+                    <td onclick="javascript:showDiv();"><a href="https://vimeo.com/359241446" data-lity><img src="img/tba.png" width="100%" /></a></td>
+                    <td>2019</td>
+                    <td>BG</td>
+                    <td>Short</td>
+                </tr>
+                <tr class="couponcode">
+                    <th>5</th>
+                    <td onclick="javascript:showDiv();"><a href="https://vimeo.com/364803456" data-lity>TBA</a></td>
+                    <td><img src="img/tba.png" width="100%" /></td>
+                    <td>2019</td>
+                    <td>BG</td>
+                    <td>Something</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+    <div class="directors">
+        <div class="contact">
+            <a href="mailto:final@new.bg">E-mail</a><br>
+            <a href="https://vimeo.com/finalnew" target="_blank">Vimeo</a><br>
+            <a href="https://www.facebook.com/Final_new-677403216064282/" target="_blank">Facebook</a><br>&nbsp;
+            <a href="https://www.instagram.com/final_new/" target="_blank">Instagram</a></div><br>
+
+        <span id="italic">PHILIPPE MOROZOV</span><br>
+        <img src="img/filip.jpg" width="100%">
+        <br>
+        123 Anywhere Street, City, State
+        (555) 000-0000
+        janesomebody@emailprovider.com
+
+        <br><br>
+        <span id="italic">GEORGE ABRASHEV</span>
+        <br>
+        State the type of job you are seeking and highlight several of your most important, impressive and marketable skills.
+        <br><br>
+        <img src="img/georgi.png" width="100%">
+        <br>
+        <span id="italic">SUMMARY OF SKILLS</span>
+        <br>
+        - Include your most marketable skills and accomplishments here.
+        - Ensure the skills you list are relevant to the type of job you are seeking.
+        - Be as specific as possible.
+        - Ensure that this section is full of the keywords employers will likely use when sorting resumes.
+        - If keywords are commonly stated more than on way, you must use both forms of the word (for example, Master of Business Administration and MBA)
+        <br>
+        <span id="italic">WORK EXPERIENCE</span>
+        <br>
+        Administrative Assistant, ABC Company, City, State, 2006 to present
+        - Use a combination of verbs and nouns to describe job duties and accomplishments that are most relevant to the work you are currently seeking.
+        - Don't forget to include a variety of targeted keywords
+        - List jobs in reverse chronological order; your most recent job goes first.
+        <br><br>
+        Administrative Assistant, XYZ Company, City, State, 2000 to 2006
+        - Continue to use verbs and nouns to describe job duties and accomplishments that are most relevant to the work you are currently seeking and target important keywords.
+        <br><br>
+        Customer Service Representative, Another Company, City, State, 1998 to 2000
+        - Continue to use verbs and nouns to describe job duties and include important keywords.
+        - Normally you should only include your most recent ten years of work experience on your resume. There are exceptions, but typically employers are most interested in your most recent experience, and going back more than ten years on your resume can age you.
+        <br><br>
+        <span id="italic">EDUCATION</span>
+        <br>
+        Administrative Assistant Certificate, Any College, City, State
+        <br><br>
+        <span id="italic">VOLUNTEER EXPERIENCE</span>
+        <br>
+        - Only include this section if it adds information that is relevant to the job you are seeking.
+        - You may also include hobbies here, but only if they are positive and relevant to the job you are seeking.
+        <br><br>
+        <span id="italic"> REFERENCES</span>
+        <br><br>
+        available upon request
+        <br><br><br>
+
+    </div>
+
+    <div class="text">
+        <div id="typed-strings">
+            <p>A (final_)new production company based in Sofia, Bulgaria</p>
+        </div>
+        <span id="typed"></span>
+    </div>
+
+    <script src="js/vendor/modernizr-3.7.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script>
+        window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')
+
+    </script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+
+</body>
+
+</html>

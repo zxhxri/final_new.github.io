@@ -63,7 +63,7 @@ function toggle1() {
  if( document.getElementById("hidethis_dots").style.display=='none' ){
    document.getElementById("hidethis_dots").style.display = 'table-row';
 // set to table-row instead of an empty string
- }else{
+ } else {
    document.getElementById("hidethis_dots").style.display = 'none';
  }
 }
@@ -74,6 +74,15 @@ function toggle2() {
 // set to table-row instead of an empty string
  }else{
    document.getElementById("hidethis_olx").style.display = 'none';
+ }
+}
+
+function toggle3() {
+ if( document.getElementById("hidethis_metro").style.display=='none' ){
+   document.getElementById("hidethis_metro").style.display = 'table-row';
+// set to table-row instead of an empty string
+ }else{
+   document.getElementById("hidethis_metro").style.display = 'none';
  }
 }
 

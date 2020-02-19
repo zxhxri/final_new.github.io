@@ -43,7 +43,7 @@ body {
 
 a {
     text-decoration: none;
-    font-family: sans-serif, 'NHaas';
+    font-family:  'NHaas', sans-serif;
     font-size: 20px;
 }
 
@@ -159,7 +159,7 @@ tr {
 }
 
 td {
-    font-family: serif, 'NHaas', sans-serif;
+    font-family: 'NHaas', sans-serif;
     font-weight: 500;
     font-style: normal;
     font-size: 1.8vw;
@@ -259,7 +259,7 @@ a {
 .contact {
     /*    position: fixed;*/
     /*    float: left;*/
-    font-family: serif, 'NHaas', sans-serif;
+    font-family: 'NHaas', sans-serif;
     font-weight: 500;
     font-style: normal;
     font-size: 2vw;

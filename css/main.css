@@ -31,10 +31,31 @@ html {
     /* Optional: just make scrollbar invisible */
 }
 
+/* -----
+SVG Icons - svgicons.sparkk.fr
+----- */
+
+.svg-icon {
+  width: 1.2em;
+  height: 1.2em;
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: blue;
+}
+
+.svg-icon circle {
+  stroke: blue;
+  stroke-width: 1;
+}
+
 @font-face {
     font-family: NHaas;
     src: url(../fonts/NHaas.otf);
 }
+
 
 body {
     overflow: hidden;
@@ -95,10 +116,7 @@ ul.nav li {
     padding-bottom: 10px;
     -webkit-text-stroke: 0.050vw black;
     pointer-events: none;
-    background: 
-  linear-gradient(to bottom, transparent, white) 
-    no-repeat bottom;
-	background-size: 100% 100%;
+    
 }
 
 
@@ -155,8 +173,9 @@ tr {
     padding-left: .25vw;
     padding-right: 1vw;
     padding-top: 0.3vw;
-    padding-bottom: 0.3vw;
+    padding-bottom: 0.5vw;
 }
+
 
 td {
     font-family: 'NHaas', sans-serif;
@@ -262,8 +281,16 @@ a {
     font-family: 'NHaas', sans-serif;
     font-weight: 500;
     font-style: normal;
-    font-size: 2vw;
+    font-size: 2.5vw;
     text-align: center;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.contact svg{
+    width: 50px;
+    height: auto;
+    padding-left: 20px;
 }
 
 a:link {
@@ -512,14 +539,14 @@ textarea {
         border-collapse: collapse;
         width: 100%;
         overflow: scroll;
-        padding-top: 50px;
+/*        padding-top: 50px;*/
     }
 
     .table {
         margin-top: 20px;
         margin-left: 0;
         left: 0;
-        top: 100px;
+/*        top: 100px;*/
     }
 
     .directors_mobile {
@@ -607,7 +634,7 @@ textarea {
         border-collapse: collapse;
         width: 100%;
         overflow: scroll;
-        padding-top: 50px;
+/*        padding-top: 50px;*/
     }
 
     .table {
@@ -705,7 +732,7 @@ textarea {
         right: 0px;
         left: 0;
         float: left;
-        width: 100%;
+        width: 98%;
         margin: 0;
 /*        font-size: 2.5vw;*/
         column-count: 1;
@@ -812,7 +839,7 @@ textarea {
         right: 0px;
         left: 0;
         float: left;
-        width: 100%;
+        width: 98%;
         margin: 0;
 /*        font-size: 2.5vw;*/
         column-count: 1;

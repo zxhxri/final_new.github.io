@@ -58,6 +58,11 @@ SVG Icons - svgicons.sparkk.fr
     src: url(../fonts/NHaas.otf);
 }
 
+@font-face {
+    font-family: NHaasMed;
+    src: url(../fonts/NHaasMed.otf);
+}
+
 
 body {
     overflow: hidden;
@@ -166,9 +171,9 @@ td {
 }
 
 th {
-    font-family: 'NHaas', sans-serif;
+    font-family: 'NHaasMed', sans-serif;
     color: black;
-    font-weight: 50;
+    font-weight: 500;
     font-style: normal;
     font-size: 25px;
     display: table-cell;

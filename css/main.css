@@ -22,10 +22,11 @@ html {
     -moz-osx-font-smoothing: grayscale;
     -webkit-overflow-scrolling: touch;
     scroll-behavior: smooth;
+    text-transform: lowercase;
 }
 
 ::-webkit-scrollbar {
-    width: 0px;
+    display: none;
     /* Remove scrollbar space */
     background: transparent;
     /* Optional: just make scrollbar invisible */
@@ -36,19 +37,19 @@ SVG Icons - svgicons.sparkk.fr
 ----- */
 
 .svg-icon {
-  width: 1.2em;
-  height: 1.2em;
+    width: 1.2em;
+    height: 1.2em;
 }
 
 .svg-icon path,
 .svg-icon polygon,
 .svg-icon rect {
-  fill: blue;
+    fill: blue;
 }
 
 .svg-icon circle {
-  stroke: blue;
-  stroke-width: 1;
+    stroke: blue;
+    stroke-width: 1;
 }
 
 @font-face {
@@ -64,7 +65,7 @@ body {
 
 a {
     text-decoration: none;
-    font-family:  'NHaas', sans-serif;
+    font-family: 'NHaas', sans-serif;
     font-size: 20px;
 }
 
@@ -84,7 +85,7 @@ a {
     padding-bottom: 10px;
     -webkit-text-stroke: 0.050vw black;
     pointer-events: none;
-    
+
 }
 
 
@@ -137,7 +138,7 @@ tr {
 
     /*    border-bottom: 0.050vw solid black;*/
     vertical-align: top;
-/*    line-height: 2.1vw;*/
+    /*    line-height: 2.1vw;*/
     padding-left: .25vw;
     padding-right: 1vw;
     padding-top: 0.3vw;
@@ -207,7 +208,7 @@ table tr th:nth-child(5) {
 
 .info p {
     /*    vertical-align: baseline;*/
-        line-height: 25px;
+    line-height: 25px;
     font-size: 18px;
     column-count: 1;
     /*    column-gap: 5%;*/
@@ -261,11 +262,11 @@ a {
     padding-top: 50px;
 }
 
-.contact_mobile{
+.contact_mobile {
     display: none;
 }
 
-.contact svg{
+.contact svg {
     width: 50px;
     height: auto;
     padding-left: 20px;
@@ -453,29 +454,46 @@ textarea {
 }
 
 @media only screen and (max-width: 480px) {
-    body {
-       
+     body {
         overflow-y: auto;
+    }
+
+    .text {
+        position: fixed;
+        bottom: 100%;
+        width: 150%;
+/*                margin-bottom: vw;*/
+        -webkit-transform: rotateZ(90deg);
+        -moz-transform: rotateZ(90deg);
+        -o-transform: rotateZ(90deg);
+        transform: rotateZ(90deg);
+        transform-origin: 0 100%;
+        font-family: Arial;
+        color: black;
+        font-size: 3vw;
+        -webkit-text-stroke: 0;
+        pointer-events: none;
+        z-index: 999999;
     }
 
     .contact {
         display: none;
     }
-    
-    .contact_mobile{
-    display: block;
+
+    .contact_mobile {
+        display: block;
         position: relative;
         top: 10px;
         float: right;
-        
-/*        padding: 20px;*/
-}
-    
-    .contact_mobile svg{
-    padding-left: 5px;
+
+        /*        padding: 20px;*/
+    }
+
+    .contact_mobile svg {
+        padding-left: 5px;
         width: 50px;
 
-}
+    }
 
     .nav {
         font-size: 15px;
@@ -489,9 +507,7 @@ textarea {
         padding-bottom: 10px;
     }
 
-    td {
-
-    }
+    td {}
 
 
     table {
@@ -504,8 +520,8 @@ textarea {
         float: left;
         border-collapse: collapse;
         /*    padding-bottom: 100px;*/
-        width: 100%;
-/*padding-top: 50px;*/
+        width: 98%;
+        /*padding-top: 50px;*/
 
         /*        overflow: scroll;*/
     }
@@ -516,15 +532,15 @@ textarea {
         display: inline-block;
         width: 98%;
         /*        left: 30px;*/
-        left: 0;
+        left: 8vw;
         padding: 15px;
         float: left;
         overflow-y: auto;
         height: auto;
-/*        padding-top: 45px;*/
+        /*        padding-top: 45px;*/
     }
 
-/*
+    /*
     .info p {
         font-size: 3.5vw;
         line-height: 5vw;
@@ -538,73 +554,89 @@ textarea {
         padding-top: 20px;
         height: auto;
         right: 0px;
-        left: 0;
+        left: 20px;
         float: left;
         width: 98%;
         margin: 0;
         padding: 15px;
-/*        font-size: 2.5vw;*/
+        /*        font-size: 2.5vw;*/
         column-count: 1;
         column-fill: balance;
         padding-bottom: 30px;
 
     }
 
-    #logo{
-         position: relative;
+    #logo {
+        position: relative;
         width: 35%;
         top: 0;
         /*        float: left;*/
-/*        left: 0;*/
+        /*        left: 0;*/
         -webkit-transform: rotate(0deg);
         -moz-transform: rotate(0deg);
         -ms-transform: rotate(0deg);
         -o-transform: rotate(0deg);
         transform: rotate(0deg);
         z-index: 5;
-        
+
     }
-    
-    
-    
- 
-     th:nth-child(5) {
+
+
+
+
+    th:nth-child(5) {
         display: none;
     }
-    
-     tr:nth-child(5) {
+
+    tr:nth-child(5) {
         display: none;
     }
-    
-     td:nth-child(5) {
+
+    td:nth-child(5) {
         display: none;
     }
 }
-
 @media only screen and (max-device-width: 480px) {
     body {
-       
         overflow-y: auto;
+    }
+
+    .text {
+        position: fixed;
+        bottom: 100%;
+        width: 150%;
+/*                margin-bottom: vw;*/
+        -webkit-transform: rotateZ(90deg);
+        -moz-transform: rotateZ(90deg);
+        -o-transform: rotateZ(90deg);
+        transform: rotateZ(90deg);
+        transform-origin: 0 100%;
+        font-family: Arial;
+        color: black;
+        font-size: 3vw;
+        -webkit-text-stroke: 0;
+        pointer-events: none;
+        z-index: 999999;
     }
 
     .contact {
         display: none;
     }
-    
-    .contact_mobile{
-    display: block;
+
+    .contact_mobile {
+        display: block;
         position: relative;
         top: 10px;
         float: right;
-        
-/*        padding: 20px;*/
-}
-    
-    .contact_mobile svg{
-    padding-left: 5px;
+
+        /*        padding: 20px;*/
+    }
+
+    .contact_mobile svg {
+        padding-left: 5px;
         width: 50px;
 
-}
+    }
 
     .nav {
         font-size: 15px;
@@ -618,9 +650,7 @@ textarea {
         padding-bottom: 10px;
     }
 
-    td {
-
-    }
+    td {}
 
 
     table {
@@ -633,8 +663,8 @@ textarea {
         float: left;
         border-collapse: collapse;
         /*    padding-bottom: 100px;*/
-        width: 100%;
-/*padding-top: 50px;*/
+        width: 98%;
+        /*padding-top: 50px;*/
 
         /*        overflow: scroll;*/
     }
@@ -645,15 +675,15 @@ textarea {
         display: inline-block;
         width: 98%;
         /*        left: 30px;*/
-        left: 0;
+        left: 8vw;
         padding: 15px;
         float: left;
         overflow-y: auto;
         height: auto;
-/*        padding-top: 45px;*/
+        /*        padding-top: 45px;*/
     }
 
-/*
+    /*
     .info p {
         font-size: 3.5vw;
         line-height: 5vw;
@@ -667,73 +697,92 @@ textarea {
         padding-top: 20px;
         height: auto;
         right: 0px;
-        left: 0;
+        left: 20px;
         float: left;
         width: 98%;
         margin: 0;
         padding: 15px;
-/*        font-size: 2.5vw;*/
+        /*        font-size: 2.5vw;*/
         column-count: 1;
         column-fill: balance;
         padding-bottom: 30px;
 
     }
 
-    #logo{
-         position: relative;
+    #logo {
+        position: relative;
         width: 35%;
         top: 0;
         /*        float: left;*/
-/*        left: 0;*/
+        /*        left: 0;*/
         -webkit-transform: rotate(0deg);
         -moz-transform: rotate(0deg);
         -ms-transform: rotate(0deg);
         -o-transform: rotate(0deg);
         transform: rotate(0deg);
         z-index: 5;
-        
+
     }
-    
-    
-    
- 
-     th:nth-child(5) {
+
+
+
+
+    th:nth-child(5) {
         display: none;
     }
-    
-     tr:nth-child(5) {
+
+    tr:nth-child(5) {
         display: none;
     }
-    
-     td:nth-child(5) {
+
+    td:nth-child(5) {
         display: none;
     }
 }
 
 @media only screen and (max-width: 800px) {
     body {
-       
+
         overflow-y: auto;
+    }
+
+    .text {
+/*        position: absolute;*/
+        position: fixed;
+        bottom: 100%;
+        width: 150%;
+/*                margin-bottom: vw;*/
+        -webkit-transform: rotateZ(90deg);
+        -moz-transform: rotateZ(90deg);
+        -o-transform: rotateZ(90deg);
+        transform: rotateZ(90deg);
+        transform-origin: 0 100%;
+        font-family: Arial;
+        color: black;
+        font-size: 3vw;
+        -webkit-text-stroke: 0;
+        pointer-events: none;
+        z-index: 999999;
     }
 
     .contact {
         display: none;
     }
-    
-    .contact_mobile{
-    display: block;
+
+    .contact_mobile {
+        display: block;
         position: relative;
         top: 10px;
         float: right;
-        
-/*        padding: 20px;*/
-}
-    
-    .contact_mobile svg{
-    padding-left: 5px;
+
+        /*        padding: 20px;*/
+    }
+
+    .contact_mobile svg {
+        padding-left: 5px;
         width: 50px;
 
-}
+    }
 
     .nav {
         font-size: 15px;
@@ -747,9 +796,7 @@ textarea {
         padding-bottom: 10px;
     }
 
-    td {
-
-    }
+    td {}
 
 
     table {
@@ -762,8 +809,8 @@ textarea {
         float: left;
         border-collapse: collapse;
         /*    padding-bottom: 100px;*/
-        width: 100%;
-/*padding-top: 50px;*/
+        width: 98%;
+        /*padding-top: 50px;*/
 
         /*        overflow: scroll;*/
     }
@@ -772,17 +819,16 @@ textarea {
     .table {
         position: relative;
         display: inline-block;
-        width: 98%;
+        width: 91%;
         /*        left: 30px;*/
-        left: 0;
-        padding: 15px;
+        left: 8vw;
         float: left;
         overflow-y: auto;
         height: auto;
-/*        padding-top: 45px;*/
+        /*        padding-top: 45px;*/
     }
 
-/*
+    /*
     .info p {
         font-size: 3.5vw;
         line-height: 5vw;
@@ -796,73 +842,91 @@ textarea {
         padding-top: 20px;
         height: auto;
         right: 0px;
-        left: 0;
+        left: 20px;
         float: left;
         width: 98%;
         margin: 0;
         padding: 15px;
-/*        font-size: 2.5vw;*/
+        /*        font-size: 2.5vw;*/
         column-count: 1;
         column-fill: balance;
         padding-bottom: 30px;
 
     }
 
-    #logo{
-         position: relative;
+    #logo {
+        position: relative;
         width: 35%;
         top: 0;
         /*        float: left;*/
-/*        left: 0;*/
+        /*        left: 0;*/
         -webkit-transform: rotate(0deg);
         -moz-transform: rotate(0deg);
         -ms-transform: rotate(0deg);
         -o-transform: rotate(0deg);
         transform: rotate(0deg);
         z-index: 5;
-        
+
     }
-    
-    
-    
- 
-     th:nth-child(5) {
+
+
+
+
+    th:nth-child(5) {
         display: none;
     }
-    
-     tr:nth-child(5) {
+
+    tr:nth-child(5) {
         display: none;
     }
-    
-     td:nth-child(5) {
+
+    td:nth-child(5) {
         display: none;
     }
 }
 
 @media only screen and (max-device-width: 800px) {
-    body {
-       
+     body {
+
         overflow-y: auto;
+    }
+
+    .text {
+        position: fixed;
+        bottom: 100%;
+        width: 150%;
+/*                margin-bottom: vw;*/
+        -webkit-transform: rotateZ(90deg);
+        -moz-transform: rotateZ(90deg);
+        -o-transform: rotateZ(90deg);
+        transform: rotateZ(90deg);
+        transform-origin: 0 100%;
+        font-family: Arial;
+        color: black;
+        font-size: 3vw;
+        -webkit-text-stroke: 0;
+        pointer-events: none;
+        z-index: 999999;
     }
 
     .contact {
         display: none;
     }
-    
-    .contact_mobile{
-    display: block;
+
+    .contact_mobile {
+        display: block;
         position: relative;
         top: 10px;
         float: right;
-        
-/*        padding: 20px;*/
-}
-    
-    .contact_mobile svg{
-    padding-left: 5px;
+
+        /*        padding: 20px;*/
+    }
+
+    .contact_mobile svg {
+        padding-left: 5px;
         width: 50px;
 
-}
+    }
 
     .nav {
         font-size: 15px;
@@ -876,9 +940,7 @@ textarea {
         padding-bottom: 10px;
     }
 
-    td {
-
-    }
+    td {}
 
 
     table {
@@ -891,27 +953,28 @@ textarea {
         float: left;
         border-collapse: collapse;
         /*    padding-bottom: 100px;*/
-        width: 100%;
-/*padding-top: 50px;*/
+       width: 98%;
+        /*padding-top: 50px;*/
 
         /*        overflow: scroll;*/
     }
 
 
+    
     .table {
         position: relative;
         display: inline-block;
-        width: 98%;
+        width: 91%;
         /*        left: 30px;*/
-        left: 0;
-        padding: 15px;
+        left: 8vw;
         float: left;
         overflow-y: auto;
         height: auto;
-/*        padding-top: 45px;*/
+        /*        padding-top: 45px;*/
     }
 
-/*
+
+    /*
     .info p {
         font-size: 3.5vw;
         line-height: 5vw;
@@ -925,45 +988,45 @@ textarea {
         padding-top: 20px;
         height: auto;
         right: 0px;
-        left: 0;
+        left: 20px;
         float: left;
         width: 98%;
         margin: 0;
         padding: 15px;
-/*        font-size: 2.5vw;*/
+        /*        font-size: 2.5vw;*/
         column-count: 1;
         column-fill: balance;
         padding-bottom: 30px;
 
     }
 
-    #logo{
-         position: relative;
+    #logo {
+        position: relative;
         width: 35%;
         top: 0;
         /*        float: left;*/
-/*        left: 0;*/
+        /*        left: 0;*/
         -webkit-transform: rotate(0deg);
         -moz-transform: rotate(0deg);
         -ms-transform: rotate(0deg);
         -o-transform: rotate(0deg);
         transform: rotate(0deg);
         z-index: 5;
-        
+
     }
-    
-    
-    
- 
-     th:nth-child(5) {
+
+
+
+
+    th:nth-child(5) {
         display: none;
     }
-    
-     tr:nth-child(5) {
+
+    tr:nth-child(5) {
         display: none;
     }
-    
-     td:nth-child(5) {
+
+    td:nth-child(5) {
         display: none;
     }
 }

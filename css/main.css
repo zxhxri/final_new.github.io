@@ -23,6 +23,7 @@ html {
     -webkit-overflow-scrolling: touch;
     scroll-behavior: smooth;
     text-transform: lowercase;
+    overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
@@ -44,11 +45,11 @@ SVG Icons - svgicons.sparkk.fr
 .svg-icon path,
 .svg-icon polygon,
 .svg-icon rect {
-    fill: blue;
+    fill: black;
 }
 
 .svg-icon circle {
-    stroke: blue;
+    stroke: black;
     stroke-width: 1;
 }
 
@@ -165,8 +166,8 @@ td {
 }
 
 th {
-    font-family: 'NHaas';
-    color: blue;
+    font-family: 'NHaas', sans-serif;
+    color: black;
     font-weight: 50;
     font-style: normal;
     font-size: 25px;

@@ -20,8 +20,8 @@ html {
     background-color: white;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-
-
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar {
@@ -66,38 +66,6 @@ a {
     text-decoration: none;
     font-family:  'NHaas', sans-serif;
     font-size: 20px;
-}
-
-li {
-    list-style: none;
-}
-
-ul {
-    margin: 0;
-}
-
-.main-nav {
-    width: 100vh;
-    height: 45px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: white;
-    -webkit-transform-origin: left top;
-    -webkit-transform: rotate(-90deg) translateX(-100%);
-    z-index: 3;
-}
-
-ul.nav {
-    margin: 0 auto;
-    height: 100%;
-}
-
-ul.nav li {
-    margin-right: 20px;
-    float: right;
-    height: 100%;
-    line-height: 45px;
 }
 
 
@@ -169,7 +137,7 @@ tr {
 
     /*    border-bottom: 0.050vw solid black;*/
     vertical-align: top;
-    line-height: 2.1vw;
+/*    line-height: 2.1vw;*/
     padding-left: .25vw;
     padding-right: 1vw;
     padding-top: 0.3vw;
@@ -181,7 +149,7 @@ td {
     font-family: 'NHaas', sans-serif;
     font-weight: 500;
     font-style: normal;
-    font-size: 1.8vw;
+    font-size: 25px;
     display: table-cell;
 
 }
@@ -200,7 +168,7 @@ th {
     color: blue;
     font-weight: 50;
     font-style: normal;
-    font-size: 1.9vw;
+    font-size: 25px;
     display: table-cell;
     padding-bottom: 0;
 }
@@ -224,6 +192,12 @@ table tr th:nth-child(3) {
 
 table tr th:nth-child(4) {
     width: 10%;
+    text-align: center;
+}
+
+table tr td:nth-child(4) {
+    width: 10%;
+    text-align: center;
 }
 
 table tr th:nth-child(5) {
@@ -233,9 +207,9 @@ table tr th:nth-child(5) {
 
 .info p {
     /*    vertical-align: baseline;*/
-    /*    line-height: 2.5vw;*/
-    font-size: 1.5vw;
-    column-count: 2;
+        line-height: 25px;
+    font-size: 18px;
+    column-count: 1;
     /*    column-gap: 5%;*/
     /*    column-fill: balance;*/
 
@@ -285,6 +259,10 @@ a {
     text-align: center;
     padding-bottom: 50px;
     padding-top: 50px;
+}
+
+.contact_mobile{
+    display: none;
 }
 
 .contact svg{
@@ -475,204 +453,29 @@ textarea {
 }
 
 @media only screen and (max-width: 480px) {
-    .contact {
-        font-size: 2vw;
-    }
-
-    th,
-    td {
-        font-size: 3.2vw;
-        line-height: 3.2vw;
-    }
-
-    td:nth-child(6) {
-        display: none;
-    }
-
-    tr:nth-child(6) {
-        display: none;
-    }
-
-    th:nth-child(6) {
-        display: none;
-    }
-    
-     
-    
-     th:nth-child(5) {
-        display: none;
-    }
-    
-     tr:nth-child(5) {
-        display: none;
-    }
-    
-     td:nth-child(5) {
-        display: none;
-    }
-
-    #logo {
-        position: fixed;
-        width: 35%;
-        top: 0;
-        /*        float: left;*/
-        left: 0;
-        -webkit-transform: rotate(0deg);
-        -moz-transform: rotate(0deg);
-        -ms-transform: rotate(0deg);
-        -o-transform: rotate(0deg);
-        transform: rotate(0deg);
-        z-index: 5;
-    }
-
-    .dropdown {
-        display: none;
-    }
-
-    table {
-        position: relative;
-        display: table;
-        margin-right: auto;
-        margin-top: 20px;
-        left: 0;
-        float: left;
-        border-collapse: collapse;
-        width: 100%;
-        overflow: scroll;
-/*        padding-top: 50px;*/
-    }
-
-    .table {
-        margin-top: 20px;
-        margin-left: 0;
-        left: 0;
-/*        top: 100px;*/
-    }
-
-    .directors_mobile {
-        position: relative;
-        width: 100%;
-        padding-top: 10px;
-        margin-right: 0.5em;
-        right: 0px;
-        /*    left: 25%;*/
-        font-family: williams-caslon-text, serif;
-        font-weight: 400;
-        font-style: normal;
-        font-size: 1.5vw;
-        color: black;
-        display: block;
-        overflow-y: auto;
-        height: 100%;
-        column-count: 2;
-    }
-
-}
-
-@media only screen and (max-device-width: 480px) {
-    .contact {
-        font-size: 2vw;
-    }
-
-    th,
-    td {
-        font-size: 3.2vw;
-        line-height: 3.2vw;
-    }
-
-    td:nth-child(6) {
-        display: none;
-    }
-
-    tr:nth-child(6) {
-        display: none;
-    }
-
-    th:nth-child(6) {
-        display: none;
-    }
-    
-   
-    
-     th:nth-child(5) {
-        display: none;
-    }
-    
-     tr:nth-child(5) {
-        display: none;
-    }
-    
-     td:nth-child(5) {
-        display: none;
-    }
-
-    #logo {
-        position: fixed;
-        width: 35%;
-        top: 0;
-        /*        float: left;*/
-        left: 0;
-        -webkit-transform: rotate(0deg);
-        -moz-transform: rotate(0deg);
-        -ms-transform: rotate(0deg);
-        -o-transform: rotate(0deg);
-        transform: rotate(0deg);
-        z-index: 5;
-    }
-
-    .dropdown {
-        display: none;
-    }
-
-    table {
-        position: relative;
-        display: table;
-        margin-right: auto;
-        margin-top: 20px;
-        left: 0;
-        float: left;
-        border-collapse: collapse;
-        width: 100%;
-        overflow: scroll;
-/*        padding-top: 50px;*/
-    }
-
-    .table {
-        margin-top: 20px;
-        margin-left: 0;
-        left: 0;
-    }
-
-    .directors_mobile {
-        position: relative;
-        width: 100%;
-        padding-top: 10px;
-        margin-right: 0.5em;
-        right: 0px;
-        /*    left: 25%;*/
-        font-family: williams-caslon-text, serif;
-        font-weight: 400;
-        font-style: normal;
-        font-size: 1.5vw;
-        color: black;
-        display: block;
-        overflow-y: auto;
-        height: 100%;
-        column-count: 2;
-    }
-
-}
-
-@media only screen and (max-width: 780px) {
     body {
-        padding: 15px;
+       
         overflow-y: auto;
     }
 
     .contact {
-        position: relative;
-        font-size: 3vw;
+        display: none;
     }
+    
+    .contact_mobile{
+    display: block;
+        position: relative;
+        top: 10px;
+        float: right;
+        
+/*        padding: 20px;*/
+}
+    
+    .contact_mobile svg{
+    padding-left: 5px;
+        width: 50px;
+
+}
 
     .nav {
         font-size: 15px;
@@ -682,11 +485,12 @@ textarea {
     td {
         font-size: 4.6vw;
         line-height: 4.2vw;
-
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
 
     td {
-        height: 60px;
+
     }
 
 
@@ -696,7 +500,6 @@ textarea {
         /*        margin-top: 35px;*/
         /*    top: 0px;*/
         display: table;
-        /*    margin-left: 3vw;*/
         margin: 0;
         float: left;
         border-collapse: collapse;
@@ -714,17 +517,20 @@ textarea {
         width: 98%;
         /*        left: 30px;*/
         left: 0;
+        padding: 15px;
         float: left;
         overflow-y: auto;
         height: auto;
 /*        padding-top: 45px;*/
     }
 
+/*
     .info p {
         font-size: 3.5vw;
         line-height: 5vw;
         column-count: 1;
     }
+*/
 
     .directors {
         position: relative;
@@ -736,6 +542,7 @@ textarea {
         float: left;
         width: 98%;
         margin: 0;
+        padding: 15px;
 /*        font-size: 2.5vw;*/
         column-count: 1;
         column-fill: balance;
@@ -744,11 +551,11 @@ textarea {
     }
 
     #logo{
-         position: absolute;
+         position: relative;
         width: 35%;
         top: 0;
         /*        float: left;*/
-        left: 0;
+/*        left: 0;*/
         -webkit-transform: rotate(0deg);
         -moz-transform: rotate(0deg);
         -ms-transform: rotate(0deg);
@@ -757,6 +564,8 @@ textarea {
         z-index: 5;
         
     }
+    
+    
     
  
      th:nth-child(5) {
@@ -772,16 +581,30 @@ textarea {
     }
 }
 
-@media only screen and (max-device-width: 780px) {
+@media only screen and (max-device-width: 480px) {
     body {
-        padding: 15px;
+       
         overflow-y: auto;
     }
 
     .contact {
-        position: relative;
-        font-size: 3vw;
+        display: none;
     }
+    
+    .contact_mobile{
+    display: block;
+        position: relative;
+        top: 10px;
+        float: right;
+        
+/*        padding: 20px;*/
+}
+    
+    .contact_mobile svg{
+    padding-left: 5px;
+        width: 50px;
+
+}
 
     .nav {
         font-size: 15px;
@@ -791,11 +614,12 @@ textarea {
     td {
         font-size: 4.6vw;
         line-height: 4.2vw;
-
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
 
     td {
-        height: 60px;
+
     }
 
 
@@ -805,7 +629,6 @@ textarea {
         /*        margin-top: 35px;*/
         /*    top: 0px;*/
         display: table;
-        /*    margin-left: 3vw;*/
         margin: 0;
         float: left;
         border-collapse: collapse;
@@ -823,17 +646,20 @@ textarea {
         width: 98%;
         /*        left: 30px;*/
         left: 0;
+        padding: 15px;
         float: left;
         overflow-y: auto;
         height: auto;
 /*        padding-top: 45px;*/
     }
 
+/*
     .info p {
         font-size: 3.5vw;
         line-height: 5vw;
         column-count: 1;
     }
+*/
 
     .directors {
         position: relative;
@@ -845,6 +671,7 @@ textarea {
         float: left;
         width: 98%;
         margin: 0;
+        padding: 15px;
 /*        font-size: 2.5vw;*/
         column-count: 1;
         column-fill: balance;
@@ -853,11 +680,11 @@ textarea {
     }
 
     #logo{
-         position: absolute;
+         position: relative;
         width: 35%;
         top: 0;
         /*        float: left;*/
-        left: 0;
+/*        left: 0;*/
         -webkit-transform: rotate(0deg);
         -moz-transform: rotate(0deg);
         -ms-transform: rotate(0deg);
@@ -868,6 +695,8 @@ textarea {
     }
     
     
+    
+ 
      th:nth-child(5) {
         display: none;
     }
@@ -879,7 +708,264 @@ textarea {
      td:nth-child(5) {
         display: none;
     }
+}
 
+@media only screen and (max-width: 800px) {
+    body {
+       
+        overflow-y: auto;
+    }
+
+    .contact {
+        display: none;
+    }
+    
+    .contact_mobile{
+    display: block;
+        position: relative;
+        top: 10px;
+        float: right;
+        
+/*        padding: 20px;*/
+}
+    
+    .contact_mobile svg{
+    padding-left: 5px;
+        width: 50px;
+
+}
+
+    .nav {
+        font-size: 15px;
+    }
+
+    th,
+    td {
+        font-size: 4.6vw;
+        line-height: 4.2vw;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    td {
+
+    }
+
+
+    table {
+
+        /*        position: fixed;*/
+        /*        margin-top: 35px;*/
+        /*    top: 0px;*/
+        display: table;
+        margin: 0;
+        float: left;
+        border-collapse: collapse;
+        /*    padding-bottom: 100px;*/
+        width: 100%;
+/*padding-top: 50px;*/
+
+        /*        overflow: scroll;*/
+    }
+
+
+    .table {
+        position: relative;
+        display: inline-block;
+        width: 98%;
+        /*        left: 30px;*/
+        left: 0;
+        padding: 15px;
+        float: left;
+        overflow-y: auto;
+        height: auto;
+/*        padding-top: 45px;*/
+    }
+
+/*
+    .info p {
+        font-size: 3.5vw;
+        line-height: 5vw;
+        column-count: 1;
+    }
+*/
+
+    .directors {
+        position: relative;
+        display: inline-block;
+        padding-top: 20px;
+        height: auto;
+        right: 0px;
+        left: 0;
+        float: left;
+        width: 98%;
+        margin: 0;
+        padding: 15px;
+/*        font-size: 2.5vw;*/
+        column-count: 1;
+        column-fill: balance;
+        padding-bottom: 30px;
+
+    }
+
+    #logo{
+         position: relative;
+        width: 35%;
+        top: 0;
+        /*        float: left;*/
+/*        left: 0;*/
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+        z-index: 5;
+        
+    }
+    
+    
+    
+ 
+     th:nth-child(5) {
+        display: none;
+    }
+    
+     tr:nth-child(5) {
+        display: none;
+    }
+    
+     td:nth-child(5) {
+        display: none;
+    }
+}
+
+@media only screen and (max-device-width: 800px) {
+    body {
+       
+        overflow-y: auto;
+    }
+
+    .contact {
+        display: none;
+    }
+    
+    .contact_mobile{
+    display: block;
+        position: relative;
+        top: 10px;
+        float: right;
+        
+/*        padding: 20px;*/
+}
+    
+    .contact_mobile svg{
+    padding-left: 5px;
+        width: 50px;
+
+}
+
+    .nav {
+        font-size: 15px;
+    }
+
+    th,
+    td {
+        font-size: 4.6vw;
+        line-height: 4.2vw;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    td {
+
+    }
+
+
+    table {
+
+        /*        position: fixed;*/
+        /*        margin-top: 35px;*/
+        /*    top: 0px;*/
+        display: table;
+        margin: 0;
+        float: left;
+        border-collapse: collapse;
+        /*    padding-bottom: 100px;*/
+        width: 100%;
+/*padding-top: 50px;*/
+
+        /*        overflow: scroll;*/
+    }
+
+
+    .table {
+        position: relative;
+        display: inline-block;
+        width: 98%;
+        /*        left: 30px;*/
+        left: 0;
+        padding: 15px;
+        float: left;
+        overflow-y: auto;
+        height: auto;
+/*        padding-top: 45px;*/
+    }
+
+/*
+    .info p {
+        font-size: 3.5vw;
+        line-height: 5vw;
+        column-count: 1;
+    }
+*/
+
+    .directors {
+        position: relative;
+        display: inline-block;
+        padding-top: 20px;
+        height: auto;
+        right: 0px;
+        left: 0;
+        float: left;
+        width: 98%;
+        margin: 0;
+        padding: 15px;
+/*        font-size: 2.5vw;*/
+        column-count: 1;
+        column-fill: balance;
+        padding-bottom: 30px;
+
+    }
+
+    #logo{
+         position: relative;
+        width: 35%;
+        top: 0;
+        /*        float: left;*/
+/*        left: 0;*/
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+        z-index: 5;
+        
+    }
+    
+    
+    
+ 
+     th:nth-child(5) {
+        display: none;
+    }
+    
+     tr:nth-child(5) {
+        display: none;
+    }
+    
+     td:nth-child(5) {
+        display: none;
+    }
 }
 
 @media print {

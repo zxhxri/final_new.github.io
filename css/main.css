@@ -88,6 +88,7 @@ a {
     transform: rotate(75deg);
     z-index: 5;
     cursor: grab;
+    border-radius: 3px;
 }
 
 #logo:active{
@@ -109,6 +110,7 @@ table {
     table-layout: fixed;
     text-align: left;
     cursor: default;
+    
 }
 
 .table {
@@ -131,6 +133,7 @@ tr {
     padding-top: 0.3vw;
     padding-bottom: 0.5vw;
     
+    
 }
 
 
@@ -140,6 +143,7 @@ td {
     font-style: normal;
     font-size: 25px;
     display: table-cell;
+    
 /*    color: green;*/
     
 }
@@ -157,10 +161,12 @@ tfoot{
 .couponcode {
     border-top: 1px solid green;
     color: forestgreen;
+    
 }
 
 .couponcode img{
     width: 100%;
+    border-radius: 2px;
 }
 
 th {

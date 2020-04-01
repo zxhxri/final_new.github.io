@@ -143,8 +143,14 @@ td {
     display: table-cell;
 }
 
+td:hover{
+    font-size: 25.5px;
+    cursor: pointer;
+}
+
 tr th{
     font-size: 18px;!important
+   
 }
 
 
@@ -219,17 +225,20 @@ table tr th:nth-child(1) {
 }
 
 table tr th:nth-child(2) {
-    width: 50%;
+    width: 70%;
 }
 
 table tr th:nth-child(3) {
     width: 10%;
     text-align: center;
+/*    padding-right: 0;*/
 }
 
 table tr td:nth-child(3){
+/*     width: 10%;*/
     text-align: center;
     font-size: 15px;
+/*      padding-right: 10px;*/
     color: black;
 }
 
@@ -247,12 +256,6 @@ table tr td:nth-child(4) {
 table tr th:nth-child(4) {
     padding-right: 0;
   
-}
-
-
-table tr th:nth-child(5) {
-    width: 10%;
-    text-align: center;
 }
 
 
@@ -307,7 +310,8 @@ a {
 }
 
 .contact_mobile {
-    display: none;
+    display: none; 
+    fill:#4348FC;
 }
 
 .directors svg {

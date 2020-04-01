@@ -15,9 +15,7 @@
 }
 
 html {
-    color: black;
-    /*    background-color: whitesmoke;*/
-    background-color: white;
+    background-color: whitesmoke;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     -webkit-overflow-scrolling: touch;
@@ -28,30 +26,13 @@ html {
 
 ::-webkit-scrollbar {
     display: none;
-    /* Remove scrollbar space */
     background: transparent;
-    /* Optional: just make scrollbar invisible */
 }
 
 /* -----
 SVG Icons - svgicons.sparkk.fr
 ----- */
 
-.svg-icon {
-    width: 1.2em;
-    height: 1.2em;
-}
-
-.svg-icon path,
-.svg-icon polygon,
-.svg-icon rect {
-    fill: black;
-}
-
-.svg-icon circle {
-    stroke: black;
-    stroke-width: 1;
-}
 
 @font-face {
     font-family: NHaas;
@@ -71,8 +52,10 @@ body {
 
 a {
     text-decoration: none;
+/*
     font-family: 'NHaas', sans-serif;
     font-size: 20px;
+*/
 }
 
 
@@ -83,8 +66,6 @@ a {
     text-align: center;
     width: 100%;
     height: auto;
-    /*    height: 50px;*/
-    /*    background-color:yellow;*/
     font-family: Arial;
     font-size: 3vw;
     color: yellow;
@@ -97,7 +78,7 @@ a {
 
 #logo {
     position: fixed;
-    top: 45%;
+    top: 65%;
     width: 20%;
     right: 5%;
     -webkit-transform: rotate(75deg);
@@ -106,6 +87,11 @@ a {
     -o-transform: rotate(75deg);
     transform: rotate(75deg);
     z-index: 5;
+    cursor: grab;
+}
+
+#logo:active{
+    cursor: grabbing;
 }
 
 
@@ -122,7 +108,7 @@ table {
     width: 65%;
     table-layout: fixed;
     text-align: left;
-    /*    border-right: 1px solid black*/
+    cursor: default;
 }
 
 .table {
@@ -132,23 +118,19 @@ table {
     overflow-y: scroll;
     height: 100%;
     width: 100%;
-
-
-    /*    padding-top: 10px;*/
+    
 }
 
 th,
 td,
 tr {
     text-align: left;
-
-    /*    border-bottom: 0.050vw solid black;*/
     vertical-align: top;
-    /*    line-height: 2.1vw;*/
     padding-left: .25vw;
     padding-right: 1vw;
     padding-top: 0.3vw;
     padding-bottom: 0.5vw;
+    
 }
 
 
@@ -158,16 +140,23 @@ td {
     font-style: normal;
     font-size: 25px;
     display: table-cell;
+/*    color: green;*/
+    
+}
 
+
+tfoot{
+      border-top: 1px solid black;
 }
 
 .couponcode:hover {
     color: slategrey;
-    cursor: pointer;
+/*    cursor: pointer;*/
 }
 
 .couponcode {
-    border-top: 1px solid black;
+    border-top: 1px solid green;
+    color: forestgreen;
 }
 
 .couponcode img{
@@ -176,7 +165,6 @@ td {
 
 th {
     font-family: 'NHaas', sans-serif;
-    color: darkkhaki;
     font-weight: 500;
     font-style: normal;
     font-size: 25px;
@@ -197,22 +185,33 @@ table tr th:nth-child(2) {
 }
 
 table tr th:nth-child(3) {
-    width: 15%;
+    width: 10%;
+    text-align: center;
+}
+
+table tr td:nth-child(3){
     text-align: center;
 }
 
 table tr th:nth-child(4) {
-    width: 10%;
+    width: 15%;
     text-align: center;
 }
 
 table tr td:nth-child(4) {
-    width: 10%;
-    text-align: center;
+    width: 15%;
+     padding-right: 0;
+  
+}
+
+table tr th:nth-child(4) {
+    padding-right: 0;
+  
 }
 
 table tr th:nth-child(5) {
-    width: 15%;
+    width: 10%;
+    text-align: center;
 }
 
 
@@ -251,14 +250,8 @@ a {
     display: block;
     overflow-y: auto;
     height: 100%;
-
 }
 
-#italic {
-    font-family: serif;
-    font-weight: 700;
-    font-style: normal;
-}
 
 .contact {
     /*    position: fixed;*/
@@ -270,6 +263,7 @@ a {
     text-align: center;
     padding-bottom: 50px;
     padding-top: 50px;
+    color: purple;
 }
 
 .contact_mobile {
@@ -277,37 +271,13 @@ a {
 }
 
 .contact svg {
-    width: 50px;
-    height: auto;
-    padding-left: 20px;
+    width: 40px;
+    height: 40px;
+   margin: 10px;
+/*    padding-left: 20px;*/
+    fill: black;
 }
 
-a:link {
-    color: black;
-}
-
-a:visited {
-    color: black;
-}
-
-a:hover {
-    color: blue;
-    /*    text-decoration: underline;*/
-}
-
-a:active {
-    color: blue;
-}
-
-/*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * Vendor-prefixed and regular ::selection selectors cannot be combined:
- * https://stackoverflow.com/a/16982510/7133471
- *
- * Customize the background color to match your design.
- */
 
 ::-moz-selection {
     background: #b3d4fc;
@@ -511,7 +481,7 @@ textarea {
 
     th,
     td {
-        font-size: 4.6vw;
+        font-size: 4vw;
         line-height: 4.2vw;
         padding-top: 10px;
         padding-bottom: 10px;
@@ -566,7 +536,7 @@ textarea {
         right: 0px;
         left: 20px;
         float: left;
-        width: 98%;
+        width: 95%;
         margin: 0;
         padding: 15px;
         /*        font-size: 2.5vw;*/
@@ -654,7 +624,7 @@ textarea {
 
     th,
     td {
-        font-size: 4.6vw;
+        font-size: 4vw;
         line-height: 4.2vw;
         padding-top: 10px;
         padding-bottom: 10px;
@@ -709,7 +679,7 @@ textarea {
         right: 0px;
         left: 20px;
         float: left;
-        width: 98%;
+        width: 95%;
         margin: 0;
         padding: 15px;
         /*        font-size: 2.5vw;*/
@@ -800,7 +770,7 @@ textarea {
 
     th,
     td {
-        font-size: 4.6vw;
+        font-size: 4vw;
         line-height: 4.2vw;
         padding-top: 10px;
         padding-bottom: 10px;
@@ -854,7 +824,7 @@ textarea {
         right: 0px;
         left: 20px;
         float: left;
-        width: 98%;
+        width: 95%;
         margin: 0;
         padding: 15px;
         /*        font-size: 2.5vw;*/
@@ -944,7 +914,7 @@ textarea {
 
     th,
     td {
-        font-size: 4.6vw;
+        font-size: 4vw;
         line-height: 4.2vw;
         padding-top: 10px;
         padding-bottom: 10px;
@@ -1000,7 +970,7 @@ textarea {
         right: 0px;
         left: 20px;
         float: left;
-        width: 98%;
+        width: 95%;
         margin: 0;
         padding: 15px;
         /*        font-size: 2.5vw;*/
@@ -1092,6 +1062,7 @@ textarea {
      */
     thead {
         display: table-header-group;
+       
     }
 
     tr,

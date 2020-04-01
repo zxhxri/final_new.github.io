@@ -29,11 +29,6 @@ html {
     background: transparent;
 }
 
-/* -----
-SVG Icons - svgicons.sparkk.fr
------ */
-
-
 @font-face {
     font-family: NHaas;
     src: url(../fonts/NHaas.otf);
@@ -43,6 +38,12 @@ SVG Icons - svgicons.sparkk.fr
     font-family: NHaasMed;
     src: url(../fonts/NHaasMed.otf);
 }
+
+@font-face {
+    font-family: 'Material Icons';
+    src: url(../fonts/MaterialIcons.ttf);
+}
+
 
 
 body {
@@ -78,8 +79,8 @@ a {
 
 #logo {
     position: fixed;
-    top: 65%;
-    width: 20%;
+    top: 15%;
+    width: 15%;
     right: 5%;
     -webkit-transform: rotate(75deg);
     -moz-transform: rotate(75deg);
@@ -93,6 +94,7 @@ a {
 
 #logo:active{
     cursor: grabbing;
+    width: 16%;
 }
 
 
@@ -141,9 +143,38 @@ td {
     display: table-cell;
 }
 
+tr th{
+    font-size: 18px;!important
+}
+
 
 tfoot{
       border-top: 1px solid black;
+}
+
+.material-icons{
+    font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+/*  font-size: 15px;  */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
 }
 
 .couponcode:hover {
@@ -152,8 +183,8 @@ tfoot{
 }
 
 .couponcode {
-    border-top: 1px solid green;
-    color: forestgreen;
+    border-top: 1px solid #4348FC;
+    color: #4348FC;
     -webkit-user-select: none; /* Safari */
   -ms-user-select: none; /* IE 10+ and Edge */
   user-select: none; /* Standard syntax */
@@ -162,6 +193,10 @@ tfoot{
 .couponcode img{
     width: 100%;
     border-radius: 2px;
+}
+
+.couponcode th{
+    font-size: 15px;
 }
 
 th {
@@ -179,6 +214,8 @@ th {
 
 table tr th:nth-child(1) {
     width: 5%;
+    
+    color: black;
 }
 
 table tr th:nth-child(2) {
@@ -192,6 +229,8 @@ table tr th:nth-child(3) {
 
 table tr td:nth-child(3){
     text-align: center;
+    font-size: 15px;
+    color: black;
 }
 
 table tr th:nth-child(4) {
@@ -209,6 +248,7 @@ table tr th:nth-child(4) {
     padding-right: 0;
   
 }
+
 
 table tr th:nth-child(5) {
     width: 10%;
@@ -237,46 +277,45 @@ a {
 }
 
 .directors {
-    position: absolute;
-    padding-top: 10px;
+    position: fixed;
+    padding-top: 5px;
     margin-right: 0.5em;
     width: 30%;
     right: 0px;
-    /*    left: 25%;*/
     font-family: 'NHaas';
     font-weight: 400;
     font-style: normal;
-    font-size: 25px;
+    font-size: 18px;
+    line-height: 21px;
     color: black;
-    display: block;
     overflow-y: auto;
-    height: 100%;
+    height: 93%;
+    display: flex;
+  justify-content: left;
+  align-items: center;
 }
 
 
 .contact {
-    /*    position: fixed;*/
-    /*    float: left;*/
+        position: fixed;
+        float: left;
     font-family: 'NHaas', sans-serif;
     font-weight: 500;
     font-style: normal;
     font-size: 2.5vw;
-    text-align: center;
-    padding-bottom: 50px;
-    padding-top: 50px;
-    color: purple;
+    text-align: left;
 }
 
 .contact_mobile {
     display: none;
 }
 
-.contact svg {
-    width: 40px;
-    height: 40px;
-   margin: 10px;
+.directors svg {
+    width: 30px;
+    height: 30px;
+   margin: 10px 10px 0 0;
 /*    padding-left: 20px;*/
-    fill: black;
+    fill: #4348FC;
 }
 
 

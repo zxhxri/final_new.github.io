@@ -1,6 +1,6 @@
 var typed = new Typed('#typed', {
     stringsElement: '#typed-strings',
-    startDelay: 4080,
+    startDelay: 1080,
     backSpeed: 50,
     typeSpeed: 50,
     loop: true,
@@ -11,8 +11,8 @@ var typed = new Typed('#typed', {
 });
 
 
-var mydiv = $("#table");
-mydiv.scrollTop(mydiv.prop("scrollHeight"));
+//var mydiv = $("#table");
+//mydiv.scrollTop(mydiv.prop("scrollHeight"));
 
 // Make the DIV element draggable:
 dragElement(document.getElementById("logo"));

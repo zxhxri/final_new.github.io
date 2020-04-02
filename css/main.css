@@ -53,7 +53,7 @@ body {
 
 a {
     text-decoration: none;
-/*
+    /*
     font-family: 'NHaas', sans-serif;
     font-size: 20px;
 */
@@ -92,7 +92,7 @@ a {
     border-radius: 3px;
 }
 
-#logo:active{
+#logo:active {
     cursor: grabbing;
     width: 16%;
 }
@@ -111,7 +111,7 @@ table {
     width: 65%;
     table-layout: fixed;
     text-align: left;
-    
+
 }
 
 .table {
@@ -120,7 +120,7 @@ table {
     display: block;
     overflow-y: scroll;
     height: 100%;
-    width: 100%;  
+    width: 100%;
 }
 
 th,
@@ -143,65 +143,68 @@ td {
     display: table-cell;
 }
 
-td:hover{
+td:hover {
     font-size: 25.5px;
     cursor: pointer;
 }
 
-tr th{
-    font-size: 18px;!important
-   
+tr th {
+    font-size: 18px;
+     !important
 }
 
 
-tfoot{
-      border-top: 1px solid black;
+tfoot {
+    border-top: 1px solid black;
 }
 
-.material-icons{
+.material-icons {
     font-family: 'Material Icons';
-  font-weight: normal;
-  font-style: normal;
-/*  font-size: 15px;  */
-  display: inline-block;
-  line-height: 1;
-  text-transform: none;
-  letter-spacing: normal;
-  word-wrap: normal;
-  white-space: nowrap;
-  direction: ltr;
+    font-weight: normal;
+    font-style: normal;
+    /*  font-size: 15px;  */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
 
-  /* Support for all WebKit browsers. */
-  -webkit-font-smoothing: antialiased;
-  /* Support for Safari and Chrome. */
-  text-rendering: optimizeLegibility;
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
 
-  /* Support for Firefox. */
-  -moz-osx-font-smoothing: grayscale;
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
 
-  /* Support for IE. */
-  font-feature-settings: 'liga';
+    /* Support for IE. */
+    font-feature-settings: 'liga';
 }
 
 .couponcode:hover {
     color: black;
-/*    cursor: pointer;*/
+    /*    cursor: pointer;*/
 }
 
 .couponcode {
     border-top: 1px solid #4348FC;
     color: #4348FC;
-    -webkit-user-select: none; /* Safari */
-  -ms-user-select: none; /* IE 10+ and Edge */
-  user-select: none; /* Standard syntax */
+    -webkit-user-select: none;
+    /* Safari */
+    -ms-user-select: none;
+    /* IE 10+ and Edge */
+    user-select: none;
+    /* Standard syntax */
 }
 
-.couponcode img{
+.couponcode img {
     width: 100%;
     border-radius: 2px;
 }
 
-.couponcode th{
+.couponcode th {
     font-size: 15px;
 }
 
@@ -220,25 +223,25 @@ th {
 
 table tr th:nth-child(1) {
     width: 5%;
-    
+
     color: black;
 }
 
 table tr th:nth-child(2) {
-    width: 70%;
+    width: 50%;
 }
 
 table tr th:nth-child(3) {
     width: 10%;
     text-align: center;
-/*    padding-right: 0;*/
+    /*    padding-right: 0;*/
 }
 
-table tr td:nth-child(3){
-/*     width: 10%;*/
+table tr td:nth-child(3) {
+    /*     width: 10%;*/
     text-align: center;
     font-size: 15px;
-/*      padding-right: 10px;*/
+    /*      padding-right: 10px;*/
     color: black;
 }
 
@@ -249,13 +252,13 @@ table tr th:nth-child(4) {
 
 table tr td:nth-child(4) {
     width: 15%;
-     padding-right: 0;
-  
+    padding-right: 0;
+
 }
 
 table tr th:nth-child(4) {
     padding-right: 0;
-  
+
 }
 
 
@@ -294,14 +297,14 @@ a {
     overflow-y: auto;
     height: 93%;
     display: flex;
-  justify-content: left;
-  align-items: center;
+    justify-content: left;
+    align-items: center;
 }
 
 
 .contact {
-        position: fixed;
-        float: left;
+    position: fixed;
+    float: left;
     font-family: 'NHaas', sans-serif;
     font-weight: 500;
     font-style: normal;
@@ -310,15 +313,15 @@ a {
 }
 
 .contact_mobile {
-    display: none; 
-    fill:#4348FC;
+    display: none;
+    fill: #4348FC;
 }
 
 .directors svg {
     width: 30px;
     height: 30px;
-   margin: 10px 10px 0 0;
-/*    padding-left: 20px;*/
+    margin: 10px 10px 0 0;
+    /*    padding-left: 20px;*/
     fill: #4348FC;
 }
 
@@ -478,7 +481,7 @@ textarea {
 }
 
 @media only screen and (max-width: 480px) {
-     body {
+    body {
         overflow-y: auto;
     }
 
@@ -486,7 +489,7 @@ textarea {
         position: fixed;
         bottom: 100%;
         width: 150%;
-/*                margin-bottom: vw;*/
+        /*                margin-bottom: vw;*/
         -webkit-transform: rotateZ(90deg);
         -moz-transform: rotateZ(90deg);
         -o-transform: rotateZ(90deg);
@@ -531,9 +534,9 @@ textarea {
         padding-bottom: 10px;
     }
 
-    td:hover{
-   font-size: 4vw;
-}
+    td:hover {
+        font-size: 4vw;
+    }
 
 
     table {
@@ -622,6 +625,7 @@ textarea {
         display: none;
     }
 }
+
 @media only screen and (max-device-width: 480px) {
     body {
         overflow-y: auto;
@@ -631,7 +635,7 @@ textarea {
         position: fixed;
         bottom: 100%;
         width: 150%;
-/*                margin-bottom: vw;*/
+        /*                margin-bottom: vw;*/
         -webkit-transform: rotateZ(90deg);
         -moz-transform: rotateZ(90deg);
         -o-transform: rotateZ(90deg);
@@ -676,9 +680,9 @@ textarea {
         padding-bottom: 10px;
     }
 
-     td:hover{
-    font-size: 4vw;
-}
+    td:hover {
+        font-size: 4vw;
+    }
 
 
     table {
@@ -775,11 +779,11 @@ textarea {
     }
 
     .text {
-/*        position: absolute;*/
+        /*        position: absolute;*/
         position: fixed;
         bottom: 100%;
         width: 150%;
-/*                margin-bottom: vw;*/
+        /*                margin-bottom: vw;*/
         -webkit-transform: rotateZ(90deg);
         -moz-transform: rotateZ(90deg);
         -o-transform: rotateZ(90deg);
@@ -824,9 +828,9 @@ textarea {
         padding-bottom: 10px;
     }
 
-     td:hover{
- font-size: 4vw;
-}
+    td:hover {
+        font-size: 4vw;
+    }
 
 
     table {
@@ -916,7 +920,7 @@ textarea {
 }
 
 @media only screen and (max-device-width: 800px) {
-     body {
+    body {
 
         overflow-y: auto;
     }
@@ -925,7 +929,7 @@ textarea {
         position: fixed;
         bottom: 100%;
         width: 150%;
-/*                margin-bottom: vw;*/
+        /*                margin-bottom: vw;*/
         -webkit-transform: rotateZ(90deg);
         -moz-transform: rotateZ(90deg);
         -o-transform: rotateZ(90deg);
@@ -970,9 +974,9 @@ textarea {
         padding-bottom: 10px;
     }
 
-   td:hover{
-   font-size: 4vw;
-}
+    td:hover {
+        font-size: 4vw;
+    }
 
 
     table {
@@ -985,14 +989,14 @@ textarea {
         float: left;
         border-collapse: collapse;
         /*    padding-bottom: 100px;*/
-       width: 98%;
+        width: 98%;
         /*padding-top: 50px;*/
 
         /*        overflow: scroll;*/
     }
 
 
-    
+
     .table {
         position: relative;
         display: inline-block;
@@ -1114,7 +1118,7 @@ textarea {
      */
     thead {
         display: table-header-group;
-       
+
     }
 
     tr,

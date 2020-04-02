@@ -1,11 +1,13 @@
 var typed = new Typed('#typed', {
     stringsElement: '#typed-strings',
-    startDelay: 150,
+    startDelay: 4080,
     backSpeed: 50,
     typeSpeed: 50,
+    loop: true,
+    loopCount: 3,
     //    @property {number} backDelay 
 
-    backDelay: 3000
+    backDelay: 5000
 });
 
 

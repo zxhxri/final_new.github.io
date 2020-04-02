@@ -275,12 +275,6 @@ table tr th:nth-child(4) {
 
 }
 
-
-a {
-    /*    text-decoration-line: none;*/
-    /*    color: black; */
-}
-
 .directors_mobile {
     display: none;
 }
@@ -324,11 +318,23 @@ a {
     fill: #4348FC;
 }
 
+.contact:visited{
+    fill: #4348FC;
+}
+
+.contact_mobile:visited{
+    fill: #4348FC;
+}
+
 .directors svg {
     width: 30px;
     height: 30px;
     margin: 10px 10px 0 0;
     /*    padding-left: 20px;*/
+    fill: #4348FC;
+}
+
+.directors svg:visited{
     fill: #4348FC;
 }
 

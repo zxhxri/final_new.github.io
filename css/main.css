@@ -300,7 +300,7 @@ a {
     overflow-y: auto;
     height: 93%;
     display: flex;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
 }
 

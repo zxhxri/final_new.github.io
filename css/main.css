@@ -496,14 +496,16 @@ textarea {
     .text {
         /*        position: absolute;*/
         position: fixed;
+/*        display: flex;*/
+/*        to:0;*/
         bottom: 100%;
         width: 150%;
-        /*                margin-bottom: vw;*/
-        -webkit-transform: rotateZ(90deg);
-        -moz-transform: rotateZ(90deg);
-        -o-transform: rotateZ(90deg);
-        transform: rotateZ(90deg);
-        transform-origin: 0 100%;
+/*        margin: 0 auto;*/
+        -moz-transform: rotate(270deg) translate(0px, -50%);
+-webkit-transform: rotate(270deg) translate(0px, -50%);
+-o-transform: rotate(270deg) translate(0px, -50%);
+-ms-transform: rotate(270deg) translate(0px,-50%);
+transform: rotate(270deg) translate(-85vw, -70vw);
         font-family: Arial;
         color: yellow;
         font-size: 3vw;
@@ -708,7 +710,7 @@ textarea {
 }
 
 @media only screen and (max-device-width: 480px) {
-    body {
+   body {
 
         overflow-y: auto;
     }
@@ -716,14 +718,16 @@ textarea {
     .text {
         /*        position: absolute;*/
         position: fixed;
+/*        display: flex;*/
+/*        to:0;*/
         bottom: 100%;
         width: 150%;
-        /*                margin-bottom: vw;*/
-        -webkit-transform: rotateZ(90deg);
-        -moz-transform: rotateZ(90deg);
-        -o-transform: rotateZ(90deg);
-        transform: rotateZ(90deg);
-        transform-origin: 0 100%;
+/*        margin: 0 auto;*/
+        -moz-transform: rotate(270deg) translate(0px, -50%);
+-webkit-transform: rotate(270deg) translate(0px, -50%);
+-o-transform: rotate(270deg) translate(0px, -50%);
+-ms-transform: rotate(270deg) translate(0px,-50%);
+transform: rotate(270deg) translate(-85vw, -70vw);
         font-family: Arial;
         color: yellow;
         font-size: 3vw;
@@ -936,14 +940,16 @@ textarea {
     .text {
         /*        position: absolute;*/
         position: fixed;
+/*        display: flex;*/
+/*        top:0;*/
         bottom: 100%;
         width: 150%;
-        /*                margin-bottom: vw;*/
-        -webkit-transform: rotateZ(90deg);
-        -moz-transform: rotateZ(90deg);
-        -o-transform: rotateZ(90deg);
-        transform: rotateZ(90deg);
-        transform-origin: 0 100%;
+/*        margin: 0 auto;*/
+        -moz-transform: rotate(270deg) translate(-65vw, -70vw);
+-webkit-transform: rotate(270deg) translate(-65vw, -70vw);
+-o-transform: rotate(270deg) translate(-65vw, -70vw);
+-ms-transform: rotate(270deg) translate(-65vw, -70vw);
+transform: rotate(270deg) translate(-65vw, -70vw);
         font-family: Arial;
         color: yellow;
         font-size: 3vw;
@@ -1156,14 +1162,16 @@ textarea {
     .text {
         /*        position: absolute;*/
         position: fixed;
+/*        display: flex;*/
+/*        to:0;*/
         bottom: 100%;
         width: 150%;
-        /*                margin-bottom: vw;*/
-        -webkit-transform: rotateZ(90deg);
-        -moz-transform: rotateZ(90deg);
-        -o-transform: rotateZ(90deg);
-        transform: rotateZ(90deg);
-        transform-origin: 0 100%;
+/*        margin: 0 auto;*/
+         -moz-transform: rotate(270deg) translate(-65vw, -70vw);
+-webkit-transform: rotate(270deg) translate(-65vw, -70vw);
+-o-transform: rotate(270deg) translate(-65vw, -70vw);
+-ms-transform: rotate(270deg) translate(-65vw, -70vw);
+transform: rotate(270deg) translate(-65vw, -70vw);
         font-family: Arial;
         color: yellow;
         font-size: 3vw;

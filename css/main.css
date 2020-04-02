@@ -149,8 +149,10 @@ td:hover {
 }
 
 tr th {
-    font-size: 18px;
-     !important
+    color: black;
+    font-size: 18px !important;
+
+
 }
 
 
@@ -184,13 +186,14 @@ tfoot {
 }
 
 .couponcode:hover {
-    color: black;
+    color: #4348FC;
     /*    cursor: pointer;*/
 }
 
 .couponcode {
     border-top: 1px solid #4348FC;
-    color: #4348FC;
+    /*    color: #4348FC;*/
+    color: #ff0080;
     -webkit-user-select: none;
     /* Safari */
     -ms-user-select: none;
@@ -299,6 +302,10 @@ a {
     display: flex;
     justify-content: left;
     align-items: center;
+}
+
+.address_mobile {
+    display: none;
 }
 
 
@@ -482,10 +489,12 @@ textarea {
 
 @media only screen and (max-width: 480px) {
     body {
+
         overflow-y: auto;
     }
 
     .text {
+        /*        position: absolute;*/
         position: fixed;
         bottom: 100%;
         width: 150%;
@@ -496,9 +505,9 @@ textarea {
         transform: rotateZ(90deg);
         transform-origin: 0 100%;
         font-family: Arial;
-        color: black;
+        color: yellow;
         font-size: 3vw;
-        -webkit-text-stroke: 0;
+        -webkit-text-stroke: 0.5 solid black;
         pointer-events: none;
         z-index: 999999;
     }
@@ -506,6 +515,51 @@ textarea {
     .contact {
         display: none;
     }
+
+    .directors_mobile {
+        display: block;
+        /*         position: fixed;*/
+        padding-top: 5px;
+        /*    margin-right: 0.5em;*/
+        /*    width: 30%;*/
+        right: 0px;
+        font-family: 'NHaas';
+        font-weight: 400;
+        font-style: normal;
+        font-size: 22px;
+        line-height: 25px;
+        color: black;
+        overflow-y: auto;
+        height: 93%;
+        text-align: left;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .address_mobile {
+        display: flex;
+        position: relative;
+        /*        right: 0px;*/
+        font-family: 'NHaas';
+        font-weight: 400;
+        font-style: normal;
+        font-size: 22px;
+        line-height: 25px;
+        width: 100%;
+        overflow-y: auto;
+        /*    height: 93%;*/
+        text-align: center;
+        /*    display: flex;*/
+        justify-content: center;
+        align-items: center;
+    }
+
+    .address_mobile p {
+        text-align: left;
+    }
+
 
     .contact_mobile {
         display: block;
@@ -538,6 +592,14 @@ textarea {
         font-size: 4vw;
     }
 
+    .couponcode th {
+        font-size: 3vw;
+    }
+
+    .couponcode {
+        color: #4348FC;
+    }
+
 
     table {
 
@@ -559,10 +621,9 @@ textarea {
     .table {
         position: relative;
         display: inline-block;
-        width: 98%;
+        width: 91%;
         /*        left: 30px;*/
         left: 8vw;
-        padding: 15px;
         float: left;
         overflow-y: auto;
         height: auto;
@@ -579,7 +640,7 @@ textarea {
 
     .directors {
         position: relative;
-        display: inline-block;
+        display: none;
         padding-top: 20px;
         height: auto;
         right: 0px;
@@ -610,10 +671,28 @@ textarea {
 
     }
 
-table tr th:nth-child(2) {
-    width: 40%;
-}
+    table tr th:nth-child(2) {
+        width: 40%;
+    }
 
+    table tr th:nth-child(3) {
+        width: 15%;
+        text-align: center;
+        /*    padding-right: 0;*/
+    }
+
+    table tr td:nth-child(3) {
+        /*     width: 10%;*/
+        text-align: center;
+        font-size: 3vw;
+        /*      padding-right: 10px;*/
+        color: black;
+    }
+
+    table tr td:nth-child(4) {
+        width: 35%;
+        padding-right: 0;
+    }
 
     th:nth-child(5) {
         display: none;
@@ -630,10 +709,12 @@ table tr th:nth-child(2) {
 
 @media only screen and (max-device-width: 480px) {
     body {
+
         overflow-y: auto;
     }
 
     .text {
+        /*        position: absolute;*/
         position: fixed;
         bottom: 100%;
         width: 150%;
@@ -644,9 +725,9 @@ table tr th:nth-child(2) {
         transform: rotateZ(90deg);
         transform-origin: 0 100%;
         font-family: Arial;
-        color: black;
+        color: yellow;
         font-size: 3vw;
-        -webkit-text-stroke: 0;
+        -webkit-text-stroke: 0.5 solid black;
         pointer-events: none;
         z-index: 999999;
     }
@@ -654,6 +735,51 @@ table tr th:nth-child(2) {
     .contact {
         display: none;
     }
+
+    .directors_mobile {
+        display: block;
+        /*         position: fixed;*/
+        padding-top: 5px;
+        /*    margin-right: 0.5em;*/
+        /*    width: 30%;*/
+        right: 0px;
+        font-family: 'NHaas';
+        font-weight: 400;
+        font-style: normal;
+        font-size: 22px;
+        line-height: 25px;
+        color: black;
+        overflow-y: auto;
+        height: 93%;
+        text-align: left;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .address_mobile {
+        display: flex;
+        position: relative;
+        /*        right: 0px;*/
+        font-family: 'NHaas';
+        font-weight: 400;
+        font-style: normal;
+        font-size: 22px;
+        line-height: 25px;
+        width: 100%;
+        overflow-y: auto;
+        /*    height: 93%;*/
+        text-align: center;
+        /*    display: flex;*/
+        justify-content: center;
+        align-items: center;
+    }
+
+    .address_mobile p {
+        text-align: left;
+    }
+
 
     .contact_mobile {
         display: block;
@@ -686,6 +812,14 @@ table tr th:nth-child(2) {
         font-size: 4vw;
     }
 
+    .couponcode th {
+        font-size: 3vw;
+    }
+
+    .couponcode {
+        color: #4348FC;
+    }
+
 
     table {
 
@@ -707,10 +841,9 @@ table tr th:nth-child(2) {
     .table {
         position: relative;
         display: inline-block;
-        width: 98%;
+        width: 91%;
         /*        left: 30px;*/
         left: 8vw;
-        padding: 15px;
         float: left;
         overflow-y: auto;
         height: auto;
@@ -727,7 +860,7 @@ table tr th:nth-child(2) {
 
     .directors {
         position: relative;
-        display: inline-block;
+        display: none;
         padding-top: 20px;
         height: auto;
         right: 0px;
@@ -758,10 +891,28 @@ table tr th:nth-child(2) {
 
     }
 
-table tr th:nth-child(2) {
-    width: 40%;
-}
+    table tr th:nth-child(2) {
+        width: 40%;
+    }
 
+    table tr th:nth-child(3) {
+        width: 15%;
+        text-align: center;
+        /*    padding-right: 0;*/
+    }
+
+    table tr td:nth-child(3) {
+        /*     width: 10%;*/
+        text-align: center;
+        font-size: 3vw;
+        /*      padding-right: 10px;*/
+        color: black;
+    }
+
+    table tr td:nth-child(4) {
+        width: 35%;
+        padding-right: 0;
+    }
 
     th:nth-child(5) {
         display: none;
@@ -794,9 +945,9 @@ table tr th:nth-child(2) {
         transform: rotateZ(90deg);
         transform-origin: 0 100%;
         font-family: Arial;
-        color: black;
+        color: yellow;
         font-size: 3vw;
-        -webkit-text-stroke: 0;
+        -webkit-text-stroke: 0.5 solid black;
         pointer-events: none;
         z-index: 999999;
     }
@@ -804,6 +955,51 @@ table tr th:nth-child(2) {
     .contact {
         display: none;
     }
+
+    .directors_mobile {
+        display: block;
+        /*         position: fixed;*/
+        padding-top: 5px;
+        /*    margin-right: 0.5em;*/
+        /*    width: 30%;*/
+        right: 0px;
+        font-family: 'NHaas';
+        font-weight: 400;
+        font-style: normal;
+        font-size: 22px;
+        line-height: 25px;
+        color: black;
+        overflow-y: auto;
+        height: 93%;
+        text-align: left;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .address_mobile {
+        display: flex;
+        position: relative;
+        /*        right: 0px;*/
+        font-family: 'NHaas';
+        font-weight: 400;
+        font-style: normal;
+        font-size: 22px;
+        line-height: 25px;
+        width: 100%;
+        overflow-y: auto;
+        /*    height: 93%;*/
+        text-align: center;
+        /*    display: flex;*/
+        justify-content: center;
+        align-items: center;
+    }
+
+    .address_mobile p {
+        text-align: left;
+    }
+
 
     .contact_mobile {
         display: block;
@@ -835,9 +1031,13 @@ table tr th:nth-child(2) {
     td:hover {
         font-size: 4vw;
     }
-    
-     .couponcode th{
+
+    .couponcode th {
         font-size: 3vw;
+    }
+
+    .couponcode {
+        color: #4348FC;
     }
 
 
@@ -880,7 +1080,7 @@ table tr th:nth-child(2) {
 
     .directors {
         position: relative;
-        display: inline-block;
+        display: none;
         padding-top: 20px;
         height: auto;
         right: 0px;
@@ -911,28 +1111,28 @@ table tr th:nth-child(2) {
 
     }
 
-table tr th:nth-child(2) {
-    width: 40%;
-}
-    
-    table tr th:nth-child(3) {
-    width: 15%;
-    text-align: center;
-    /*    padding-right: 0;*/
-}
+    table tr th:nth-child(2) {
+        width: 40%;
+    }
 
-table tr td:nth-child(3) {
-    /*     width: 10%;*/
-    text-align: center;
-    font-size: 3vw;
-    /*      padding-right: 10px;*/
-    color: black;
-}
+    table tr th:nth-child(3) {
+        width: 15%;
+        text-align: center;
+        /*    padding-right: 0;*/
+    }
+
+    table tr td:nth-child(3) {
+        /*     width: 10%;*/
+        text-align: center;
+        font-size: 3vw;
+        /*      padding-right: 10px;*/
+        color: black;
+    }
 
     table tr td:nth-child(4) {
-    width: 35%;
-    padding-right: 0;
-}
+        width: 35%;
+        padding-right: 0;
+    }
 
     th:nth-child(5) {
         display: none;
@@ -954,6 +1154,7 @@ table tr td:nth-child(3) {
     }
 
     .text {
+        /*        position: absolute;*/
         position: fixed;
         bottom: 100%;
         width: 150%;
@@ -964,9 +1165,9 @@ table tr td:nth-child(3) {
         transform: rotateZ(90deg);
         transform-origin: 0 100%;
         font-family: Arial;
-        color: black;
+        color: yellow;
         font-size: 3vw;
-        -webkit-text-stroke: 0;
+        -webkit-text-stroke: 0.5 solid black;
         pointer-events: none;
         z-index: 999999;
     }
@@ -974,6 +1175,51 @@ table tr td:nth-child(3) {
     .contact {
         display: none;
     }
+
+    .directors_mobile {
+        display: block;
+        /*         position: fixed;*/
+        padding-top: 5px;
+        /*    margin-right: 0.5em;*/
+        /*    width: 30%;*/
+        right: 0px;
+        font-family: 'NHaas';
+        font-weight: 400;
+        font-style: normal;
+        font-size: 22px;
+        line-height: 25px;
+        color: black;
+        overflow-y: auto;
+        height: 93%;
+        text-align: left;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .address_mobile {
+        display: flex;
+        position: relative;
+        /*        right: 0px;*/
+        font-family: 'NHaas';
+        font-weight: 400;
+        font-style: normal;
+        font-size: 22px;
+        line-height: 25px;
+        width: 100%;
+        overflow-y: auto;
+        /*    height: 93%;*/
+        text-align: center;
+        /*    display: flex;*/
+        justify-content: center;
+        align-items: center;
+    }
+
+    .address_mobile p {
+        text-align: left;
+    }
+
 
     .contact_mobile {
         display: block;
@@ -1005,9 +1251,13 @@ table tr td:nth-child(3) {
     td:hover {
         font-size: 4vw;
     }
-    
-    .couponcode th{
+
+    .couponcode th {
         font-size: 3vw;
+    }
+
+    .couponcode {
+        color: #4348FC;
     }
 
 
@@ -1028,7 +1278,6 @@ table tr td:nth-child(3) {
     }
 
 
-
     .table {
         position: relative;
         display: inline-block;
@@ -1041,7 +1290,6 @@ table tr td:nth-child(3) {
         /*        padding-top: 45px;*/
     }
 
-
     /*
     .info p {
         font-size: 3.5vw;
@@ -1052,7 +1300,7 @@ table tr td:nth-child(3) {
 
     .directors {
         position: relative;
-        display: inline-block;
+        display: none;
         padding-top: 20px;
         height: auto;
         right: 0px;
@@ -1083,30 +1331,28 @@ table tr td:nth-child(3) {
 
     }
 
+    table tr th:nth-child(2) {
+        width: 40%;
+    }
 
-table tr th:nth-child(2) {
-    width: 40%;
-}
-    
-     table tr th:nth-child(3) {
-    width: 15%;
-    text-align: center;
-    /*    padding-right: 0;*/
-}
+    table tr th:nth-child(3) {
+        width: 15%;
+        text-align: center;
+        /*    padding-right: 0;*/
+    }
 
-table tr td:nth-child(3) {
-    /*     width: 10%;*/
-    text-align: center;
-    font-size: 3vw;
-    /*      padding-right: 10px;*/
-    color: black;
-}
+    table tr td:nth-child(3) {
+        /*     width: 10%;*/
+        text-align: center;
+        font-size: 3vw;
+        /*      padding-right: 10px;*/
+        color: black;
+    }
 
-    
     table tr td:nth-child(4) {
-    width: 20%;
-    padding-right: 0;
-}
+        width: 35%;
+        padding-right: 0;
+    }
 
     th:nth-child(5) {
         display: none;

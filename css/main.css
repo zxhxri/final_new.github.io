@@ -531,7 +531,9 @@ textarea {
         padding-bottom: 10px;
     }
 
-    td {}
+    td:hover{
+    font-size: font-size: 4vw;
+}
 
 
     table {
@@ -674,7 +676,9 @@ textarea {
         padding-bottom: 10px;
     }
 
-    td {}
+     td:hover{
+    font-size: font-size: 4vw;
+}
 
 
     table {
@@ -820,7 +824,9 @@ textarea {
         padding-bottom: 10px;
     }
 
-    td {}
+     td:hover{
+    font-size: font-size: 4vw;
+}
 
 
     table {
@@ -964,7 +970,9 @@ textarea {
         padding-bottom: 10px;
     }
 
-    td {}
+   td:hover{
+    font-size: font-size: 4vw;
+}
 
 
     table {

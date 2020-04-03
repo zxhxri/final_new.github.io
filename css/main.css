@@ -302,12 +302,13 @@ table tr th:nth-child(4) {
     display: flex;
     justify-content: center;
     align-items: center ;
-    height: 93%;
+    height: 100%;
     float: left;
     white-space: nowrap;
 }
 
 #svgs{
+    
     padding-left: 3vw;
 }
 

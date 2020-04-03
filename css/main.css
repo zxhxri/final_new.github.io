@@ -528,6 +528,14 @@ transform: rotate(270deg) translate(-65vw, -70vw);
         pointer-events: none;
         z-index: 999999;
     }
+    
+    .contact_mobile:visited{
+    fill: #4348FC;
+}
+
+a:visited{
+    fill: #4348FC;
+}
 
     .contact {
         display: none;
@@ -760,6 +768,14 @@ transform: rotate(270deg) translate(-65vw, -70vw);
         pointer-events: none;
         z-index: 999999;
     }
+    
+    .contact_mobile:visited{
+    fill: #4348FC;
+}
+
+a:visited{
+    fill: #4348FC;
+}
 
     .contact {
         display: none;
@@ -992,6 +1008,14 @@ transform: rotate(270deg) translate(-65vw, -70vw);
         z-index: 999999;
     }
 
+.contact_mobile:visited{
+    fill: #4348FC;
+}
+
+a:visited{
+    fill: #4348FC;
+}
+    
     .contact {
         display: none;
     }
@@ -1223,6 +1247,14 @@ transform: rotate(270deg) translate(-65vw, -70vw);
         pointer-events: none;
         z-index: 999999;
     }
+    
+    .contact_mobile:visited{
+    fill: #4348FC;
+}
+
+a:visited{
+    fill: #4348FC;
+}
 
     .contact {
         display: none;
@@ -1444,7 +1476,7 @@ transform: rotate(270deg) translate(-65vw, -70vw);
 
     a,
     a:visited {
-        text-decoration: underline;
+        text-decoration: none;
     }
 
     a[href]:after {

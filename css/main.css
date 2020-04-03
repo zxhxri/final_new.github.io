@@ -330,6 +330,10 @@ table tr th:nth-child(4) {
     fill: #4348FC;
 }
 
+a:visited{
+    fill: #4348FC;
+}
+
 .directors svg {
     width: 30px;
     height: 30px;

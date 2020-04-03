@@ -279,8 +279,8 @@ table tr th:nth-child(4) {
     display: none;
 }
 
-.directors {
-    position: fixed;
+.side_bar{
+     position: fixed;
     padding-top: 5px;
     margin-right: 0.5em;
     width: 30%;
@@ -293,24 +293,28 @@ table tr th:nth-child(4) {
     color: black;
     overflow-y: auto;
     height: 93%;
+    
+}
+
+.directors {
+   position: relative;
+    width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center ;
+    height: 93%;
+    float: left;
+    white-space: nowrap;
 }
+
+#svgs{
+    padding-left: 3vw;
+}
+
+
 
 .address_mobile {
     display: none;
-}
-
-
-.contact {
-    position: fixed;
-    float: left;
-    font-family: 'NHaas', sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 2.5vw;
-    text-align: left;
 }
 
 .contact_mobile {
@@ -332,6 +336,7 @@ table tr th:nth-child(4) {
     margin: 10px 10px 0 0;
     /*    padding-left: 20px;*/
     fill: #4348FC;
+    
 }
 
 .directors svg:visited{
@@ -710,6 +715,7 @@ transform: rotate(270deg) translate(-65vw, -70vw);
         padding-right: 0;
     }
 
+/*
     th:nth-child(5) {
         display: none;
     }
@@ -721,6 +727,7 @@ transform: rotate(270deg) translate(-65vw, -70vw);
     td:nth-child(5) {
         display: none;
     }
+*/
 }
 
 @media only screen and (max-device-width: 480px) {
@@ -939,6 +946,7 @@ transform: rotate(270deg) translate(-65vw, -70vw);
         width: 35%;
         padding-right: 0;
     }
+/*
 
     th:nth-child(5) {
         display: none;
@@ -951,6 +959,7 @@ transform: rotate(270deg) translate(-65vw, -70vw);
     td:nth-child(5) {
         display: none;
     }
+*/
 }
 @media only screen and (max-width: 800px) {
     body {
@@ -1169,6 +1178,7 @@ transform: rotate(270deg) translate(-65vw, -70vw);
         padding-right: 0;
     }
 
+/*
     th:nth-child(5) {
         display: none;
     }
@@ -1180,6 +1190,7 @@ transform: rotate(270deg) translate(-65vw, -70vw);
     td:nth-child(5) {
         display: none;
     }
+*/
 }
 
 @media only screen and (max-device-width: 800px) {
@@ -1399,6 +1410,7 @@ transform: rotate(270deg) translate(-65vw, -70vw);
         padding-right: 0;
     }
 
+/*
     th:nth-child(5) {
         display: none;
     }
@@ -1410,6 +1422,7 @@ transform: rotate(270deg) translate(-65vw, -70vw);
     td:nth-child(5) {
         display: none;
     }
+*/
 }
 
 @media print {
